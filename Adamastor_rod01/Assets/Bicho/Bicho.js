@@ -30,13 +30,13 @@ zPos=raio*(Mathf.Cos(theta*Mathf.PI));
 
 transform.position = Vector3(xPos, yPos, zPos);
 
-var sample = Mathf.PerlinNoise(xPos, yPos);
-//Debug.Log (sample);
+var noisyPath = Mathf.PerlinNoise(xPos, yPos)/1000;
+//Debug.Log (noisyPath);
 
-if(theta<2) theta+=0.0001;
+if(theta<2) theta+=(noisyPath+0.0001);
 else theta =0;
 
-if(alpha<2) alpha+=0.0001+sample/100;
+if(alpha<2) alpha+=(noisyPath+0.0001);
 else alpha =0;
 
 }
