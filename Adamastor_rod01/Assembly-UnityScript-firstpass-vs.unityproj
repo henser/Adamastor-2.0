@@ -49,22 +49,10 @@
      <Compile Include="Assets\Standard Assets\Scripts\Camera Scripts\SmoothFollow.js" />
      <Compile Include="Assets\Standard Assets\Scripts\Camera Scripts\SmoothLookAt.js" />
      <Compile Include="Assets\Standard Assets\Scripts\General Scripts\DragRigidbody.js" />
-     <None Include="Assets\Behave\Changelog.txt" />
      <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularSmooth.shader" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
-     <None Include="Assets\Behave\Readme.txt" />
-     <None Include="Assets\Behave\License.txt" />
      <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularDisplacement.shader" />
- <Reference Include="Assets\Behave\Behave.Unity.Assets">
- <HintPath>Assets\Behave\Behave.Unity.Assets.dll</HintPath>
- </Reference>
- <Reference Include="Assets\Behave\Behave.Unity.Runtime">
- <HintPath>Assets\Behave\Behave.Unity.Runtime.dll</HintPath>
- </Reference>
- <Reference Include="Assets\Behave\Compatibility\Behave">
- <HintPath>Assets\Behave\Compatibility\Behave.dll</HintPath>
- </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

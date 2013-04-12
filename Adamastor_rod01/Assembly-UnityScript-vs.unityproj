@@ -44,26 +44,15 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Bicho\Bicho.js" />
+     <Compile Include="Assets\Bicho\BichoFollow.js" />
+     <Compile Include="Assets\Bicho\BichoLeader.js" />
      <Compile Include="Assets\adamastor.js" />
-     <None Include="Assets\Behave\Changelog.txt" />
      <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularSmooth.shader" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
-     <None Include="Assets\Behave\Readme.txt" />
-     <None Include="Assets\Behave\License.txt" />
      <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularDisplacement.shader" />
  <Reference Include="Library\ScriptAssemblies\Assembly-UnityScript-firstpass">
  <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
- </Reference>
- <Reference Include="Assets\Behave\Behave.Unity.Assets">
- <HintPath>Assets\Behave\Behave.Unity.Assets.dll</HintPath>
- </Reference>
- <Reference Include="Assets\Behave\Behave.Unity.Runtime">
- <HintPath>Assets\Behave\Behave.Unity.Runtime.dll</HintPath>
- </Reference>
- <Reference Include="Assets\Behave\Compatibility\Behave">
- <HintPath>Assets\Behave\Compatibility\Behave.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
