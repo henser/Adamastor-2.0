@@ -46,6 +46,10 @@
   <ItemGroup>
      <Compile Include="Assets\Bicho\BichoFollow.js" />
      <Compile Include="Assets\Bicho\BichoLeader.js" />
+     <Compile Include="Assets\Bicho\gravity.js" />
+     <Compile Include="Assets\GravityScripts\Dt\MacAndLenny\RigidbodyFirstPersonController.js" />
+     <Compile Include="Assets\GravityScripts\FauxGravityAttractor.js" />
+     <Compile Include="Assets\GravityScripts\FauxGravityBody.js" />
      <Compile Include="Assets\adamastor.js" />
      <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularSmooth.shader" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
