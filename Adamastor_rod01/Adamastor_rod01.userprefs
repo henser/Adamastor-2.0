@@ -1,13 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Bicho/seeker.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Bicho/gravity.js">
     <Files>
-      <File FileName="Assets/adamastor.js" Line="1" Column="1" />
+      <File FileName="Assets/adamastor.js" Line="51" Column="42" />
       <File FileName="Assets/Bicho/BichoLeader.js" Line="1" Column="1" />
       <File FileName="Assets/Bicho/BichoFollow.js" Line="1" Column="1" />
-      <File FileName="Assets/GravityScripts/FauxGravityBody.js" Line="18" Column="5" />
-      <File FileName="Assets/GravityScripts/FauxGravityAttractor.js" Line="1" Column="1" />
-      <File FileName="Assets/Bicho/seeker.js" Line="93" Column="6" />
+      <File FileName="Assets/Bicho/gravity.js" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

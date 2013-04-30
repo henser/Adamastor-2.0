@@ -5,7 +5,8 @@
 
 function Start () {
 
-  planet = GameObject.Find("Sphere");
+  //planet = GameObject.Find("Sphere");
+  planet = GameObject.Find("_planeta");
 
 }
 
