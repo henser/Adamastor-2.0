@@ -5,8 +5,8 @@
 
 function Start () {
 
-  //planet = GameObject.Find("Sphere");
-  planet = GameObject.Find("_planeta");
+  planet = GameObject.Find("Sphere");
+  //planet = GameObject.Find("_planeta");
 
 }
 
@@ -20,4 +20,18 @@ function Start () {
     rigidbody.velocity.y = ((-transform.position.y + planet.transform.position.y)*gravity);
     rigidbody.velocity.z = ((-transform.position.z + planet.transform.position.z)*gravity);
    transform.LookAt(planet.transform.position);
+    }
+    
+    
+    
+    function Update () {
+    
+    
+  if(  Input.GetButton ("Horizontal") ) {
+  
+  //Debug.Log("left");
+  
+ //  rigidbody.AddForce (-50, 0, 0);
+    
+    }
     }
