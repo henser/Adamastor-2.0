@@ -36,16 +36,17 @@ function Start () {
 // Big Bang. Planet starts with X bichos
 for (var i : int = 0;i < nrBichos; i++) {
 //distribute randomly the bichos along the planet
-alpha=Random.Range(0.0,2.0);
-theta=Random.Range(0.0,2.0);
+alpha=Random.Range(0.0,(2.0*Mathf.PI));
+theta=Random.Range(0.0,(2.0*Mathf.PI));
 // for polar to cartesian coordenates
-xPos=raio*(Mathf.Sin(theta*Mathf.PI))*Mathf.Cos(alpha*Mathf.PI);
-yPos=raio*(Mathf.Sin(theta*Mathf.PI))*Mathf.Sin(alpha*Mathf.PI);
-zPos=raio*(Mathf.Cos(theta*Mathf.PI));
+xPos=raio*(Mathf.Sin(theta))*Mathf.Cos(alpha);
+yPos=raio*(Mathf.Sin(theta))*Mathf.Sin(alpha);
+zPos=raio*(Mathf.Cos(theta));
 //instanteato copyes of the prefab Bichos
 var bichos : GameObject =  Instantiate (bicho1, Vector3( xPos,yPos,zPos), Quaternion.identity) as GameObject;
 //put each copy in a folder. (in the hierarchy menu)
 bichos.transform.parent = GameObject.Find("_bichos").transform;
+
 //give a name to each bicho
 bichos.name="Bicho";
 // add each new bichos to the array bando de bicho
@@ -57,18 +58,22 @@ bandoBichos.Add(bichos);
  // Big Bang. Planet starts with X bichos
 for (var j : int = 0;j < nrComidas; j++) {
 //distribute randomly the bichos along the planet
-alpha=Random.Range(0.0,2.0);
-theta=Random.Range(0.0,2.0);
+alpha=Random.Range(0.0,(2*Mathf.PI));
+theta=Random.Range(0.0,(2*Mathf.PI));
+
+raio=5;
 // for polar to cartesian coordenates
-xPos=(raio+0.4)*(Mathf.Sin(theta*Mathf.PI))*Mathf.Cos(alpha*Mathf.PI);
-yPos=(raio+0.4)*(Mathf.Sin(theta*Mathf.PI))*Mathf.Sin(alpha*Mathf.PI);
-zPos=(raio+0.4)*(Mathf.Cos(theta*Mathf.PI));
+xPos=(raio+0.8)*(Mathf.Sin(theta))*Mathf.Cos(alpha);
+yPos=(raio+0.8)*(Mathf.Sin(theta))*Mathf.Sin(alpha);
+zPos=(raio+0.8)*(Mathf.Cos(theta));
 //instanteato copyes of the prefab comida
 var comidas : GameObject =  Instantiate (comida, Vector3( xPos,yPos,zPos), transform.rotation) as GameObject;
 //put each copy in a folder. (in the hierarchy menu)
-comidas.transform.parent = GameObject.Find("Sphere").transform;
-comidas.transform.Rotate(Vector3((Mathf.Rad2Deg*alpha)+45, 0,0));
+comidas.transform.parent = GameObject.Find("_comida").transform;
+//comidas.transform.Rotate(Vector3((Mathf.Rad2Deg*alpha)+45, 0,0));
 paletesComida.Add(comidas);
+
+Debug.Log(j+" "+Vector3.Distance(comidas.transform.position, Vector3.zero));
     }    
     
     
@@ -117,7 +122,7 @@ for(var i=1; i<bandoBichos.length; i++){
 	dist2=paletesComida[j];
 	var distt = Vector3.Distance(dist.transform.position, dist2.transform.position);
 	if( distt<1 ) Debug.DrawLine (dist.transform.position, dist2.transform.position, Color.red);
-//Debug.Log(  Vector3.Distance(dist.transform.position, dist2.transform.position));
+	//Debug.Log(  Vector3.Distance(dist.transform.position, dist2.transform.position));
 	//Debug.Log(  dist.transform.position);
 	}
 	

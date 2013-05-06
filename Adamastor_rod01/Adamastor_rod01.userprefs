@@ -1,6 +1,14 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Comida/comidaScript.js">
+    <Files>
+      <File FileName="Assets/adamastor.js" Line="76" Column="1" />
+      <File FileName="Assets/Bicho/BichoLeader.js" Line="1" Column="1" />
+      <File FileName="Assets/Bicho/BichoFollow.js" Line="1" Column="1" />
+      <File FileName="Assets/Bicho/gravity.js" Line="1" Column="1" />
+      <File FileName="Assets/Comida/comidaScript.js" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
